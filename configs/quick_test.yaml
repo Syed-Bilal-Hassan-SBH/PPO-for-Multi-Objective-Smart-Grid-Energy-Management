@@ -1,0 +1,56 @@
+# Quick Test Configuration
+# Same as default.yaml but with reduced timesteps for testing
+
+training:
+  total_timesteps: 10000  # Quick test: 10k steps (~5 minutes)
+  learning_rate: 0.0003
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_ratio: 0.2
+  clip_range_vf: 0.02
+  entropy_coef: 0.01
+  value_coef: 0.5
+  max_grad_norm: 0.5
+  n_epochs: 10
+  batch_size: 64
+  rollout_steps: 2048
+  eval_interval: 5  # Evaluate every 5 episodes (faster for testing)
+  save_interval: 5
+  eval_episodes: 3
+  learning_rate_schedule: "linear"  # linear, constant
+  entropy_schedule: "linear"
+
+environment:
+  n_buildings: 5
+  normalize_obs: true
+  clip_obs: 10.0
+  clip_actions: true
+  use_safety_constraints: true
+
+reward:
+  weight_cost: 0.4
+  weight_carbon: 0.2
+  weight_peak: 0.2
+  weight_health: 0.2
+  normalize_components: true
+  normalize_reward: true
+  clip_reward: 10.0
+
+network:
+  hidden_sizes: [128, 128]
+  activation: "tanh"  # tanh, relu
+  use_orthogonal_init: true
+
+offline_pretraining:
+  enabled: false  # Disable for quick test
+  n_episodes: 50
+  n_training_steps: 2500
+  batch_size: 64
+  tau: 0.7
+  beta: 3.0
+  use_transfer: true
+
+logging:
+  log_interval: 5  # Log every 5 episodes
+  save_video: false
+  tensorboard: true

@@ -1,0 +1,144 @@
+{
+  "results": {
+    "Random": {
+      "returns": [
+        -87600.0
+      ],
+      "mean_return": -87600.0,
+      "std_return": 0.0,
+      "max_return": -87600.0,
+      "min_return": -87600.0,
+      "mean_length": 8760.0
+    },
+    "Do-Nothing": {
+      "returns": [
+        -87600.0
+      ],
+      "mean_return": -87600.0,
+      "std_return": 0.0,
+      "max_return": -87600.0,
+      "min_return": -87600.0,
+      "mean_length": 8760.0
+    },
+    "Rule-Based TOU": {
+      "returns": [
+        -87600.0
+      ],
+      "mean_return": -87600.0,
+      "std_return": 0.0,
+      "max_return": -87600.0,
+      "min_return": -87600.0,
+      "mean_length": 8760.0
+    },
+    "Peak Shaving": {
+      "returns": [
+        -87600.0
+      ],
+      "mean_return": -87600.0,
+      "std_return": 0.0,
+      "max_return": -87600.0,
+      "min_return": -87600.0,
+      "mean_length": 8760.0
+    },
+    "Simple MPC": {
+      "returns": [
+        -87600.0
+      ],
+      "mean_return": -87600.0,
+      "std_return": 0.0,
+      "max_return": -87600.0,
+      "min_return": -87600.0,
+      "mean_length": 8760.0
+    },
+    "PPO": {
+      "returns": [
+        -87600.0
+      ],
+      "mean_return": -87600.0,
+      "std_return": 0.0,
+      "max_return": -87600.0,
+      "min_return": -87600.0
+    }
+  },
+  "statistical_tests": {
+    "Random vs Do-Nothing": {
+      "t_test_p_value": NaN,
+      "wilcoxon_p_value": 1.0,
+      "mean_diff": 0.0
+    },
+    "Random vs Rule-Based TOU": {
+      "t_test_p_value": NaN,
+      "wilcoxon_p_value": 1.0,
+      "mean_diff": 0.0
+    },
+    "Random vs Peak Shaving": {
+      "t_test_p_value": NaN,
+      "wilcoxon_p_value": 1.0,
+      "mean_diff": 0.0
+    },
+    "Random vs Simple MPC": {
+      "t_test_p_value": NaN,
+      "wilcoxon_p_value": 1.0,
+      "mean_diff": 0.0
+    },
+    "Random vs PPO": {
+      "t_test_p_value": NaN,
+      "wilcoxon_p_value": 1.0,
+      "mean_diff": 0.0
+    },
+    "Do-Nothing vs Rule-Based TOU": {
+      "t_test_p_value": NaN,
+      "wilcoxon_p_value": 1.0,
+      "mean_diff": 0.0
+    },
+    "Do-Nothing vs Peak Shaving": {
+      "t_test_p_value": NaN,
+      "wilcoxon_p_value": 1.0,
+      "mean_diff": 0.0
+    },
+    "Do-Nothing vs Simple MPC": {
+      "t_test_p_value": NaN,
+      "wilcoxon_p_value": 1.0,
+      "mean_diff": 0.0
+    },
+    "Do-Nothing vs PPO": {
+      "t_test_p_value": NaN,
+      "wilcoxon_p_value": 1.0,
+      "mean_diff": 0.0
+    },
+    "Rule-Based TOU vs Peak Shaving": {
+      "t_test_p_value": NaN,
+      "wilcoxon_p_value": 1.0,
+      "mean_diff": 0.0
+    },
+    "Rule-Based TOU vs Simple MPC": {
+      "t_test_p_value": NaN,
+      "wilcoxon_p_value": 1.0,
+      "mean_diff": 0.0
+    },
+    "Rule-Based TOU vs PPO": {
+      "t_test_p_value": NaN,
+      "wilcoxon_p_value": 1.0,
+      "mean_diff": 0.0
+    },
+    "Peak Shaving vs Simple MPC": {
+      "t_test_p_value": NaN,
+      "wilcoxon_p_value": 1.0,
+      "mean_diff": 0.0
+    },
+    "Peak Shaving vs PPO": {
+      "t_test_p_value": NaN,
+      "wilcoxon_p_value": 1.0,
+      "mean_diff": 0.0
+    },
+    "Simple MPC vs PPO": {
+      "t_test_p_value": NaN,
+      "wilcoxon_p_value": 1.0,
+      "mean_diff": 0.0
+    }
+  },
+  "metadata": {
+    "n_baselines": 6,
+    "best_method": "Random"
+  }
+}

@@ -1,0 +1,64 @@
+ablation:
+  weight_carbon: null
+  weight_cost: null
+  weight_health: null
+  weight_peak: null
+environment:
+  clip_actions: true
+  clip_obs: 10.0
+  n_buildings: 5
+  name: citylearn
+  normalize_obs: true
+  track_metrics: true
+  use_safety_constraints: true
+logging:
+  checkpoint_dir: results/checkpoints
+  log_dir: results/logs
+  log_interval: 100
+  plot_dir: results/plots
+  tensorboard_dir: results/tensorboard
+  use_tensorboard: true
+network:
+  activation: tanh
+  hidden_sizes:
+  - 128
+  - 128
+  log_std_init: 0.0
+  use_orthogonal_init: true
+offline_pretraining:
+  batch_size: 32
+  enabled: false
+  learning_rate: 1e-3
+  n_episodes: 100
+  n_training_steps: 5000
+reward:
+  baseline_carbon: 1.0
+  baseline_cost: 1.0
+  baseline_peak: 1.0
+  clip_reward: 10.0
+  constraint_penalty: -100.0
+  normalize_components: true
+  normalize_reward: true
+  weight_carbon: 0.0
+  weight_cost: 1.0
+  weight_health: 0.0
+  weight_peak: 0.0
+training:
+  batch_size: 64
+  clip_ratio: 0.2
+  clip_ratio_vf: 0.02
+  entropy_coef: 0.01
+  entropy_coef_schedule: linear
+  eval_episodes: 5
+  eval_interval: 10
+  gae_lambda: 0.95
+  gamma: 0.99
+  learning_rate: 3e-4
+  learning_rate_schedule: linear
+  max_grad_norm: 0.5
+  n_epochs: 10
+  rollout_steps: 2048
+  save_interval: 10
+  seed: 42
+  total_timesteps: 500000
+  value_coef: 0.5

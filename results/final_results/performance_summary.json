@@ -1,0 +1,8 @@
+{
+  "total_steps": 1001472,
+  "total_episodes": 1026,
+  "mean_return": -1371.98,
+  "std_return": 25.88,
+  "final_100_episodes_mean": null,
+  "improvement_from_start": null
+}

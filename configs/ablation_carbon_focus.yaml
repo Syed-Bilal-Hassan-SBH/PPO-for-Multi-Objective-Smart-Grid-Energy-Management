@@ -1,0 +1,54 @@
+# Ablation Study: Emissions Optimization
+# Tests whether agent can minimize emissions while balancing other objectives
+
+training:
+  total_timesteps: 500000
+  rollout_steps: 2048
+  learning_rate: 3e-4
+  learning_rate_schedule: "linear"
+  n_epochs: 10
+  batch_size: 64
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_ratio: 0.2
+  clip_ratio_vf: 0.02
+  entropy_coef: 0.01
+  entropy_coef_schedule: "linear"
+  value_coef: 0.5
+  max_grad_norm: 0.5
+  eval_interval: 10
+  save_interval: 10
+  eval_episodes: 5
+  seed: 42
+
+environment:
+  name: "citylearn"
+  n_buildings: 5
+  normalize_obs: true
+  clip_actions: true
+  clip_obs: 10.0
+  track_metrics: true
+  use_safety_constraints: true
+
+reward:
+  weight_cost: 0.1
+  weight_carbon: 0.7
+  weight_peak: 0.1
+  weight_health: 0.1
+  normalize_components: true
+  normalize_reward: true
+  clip_reward: 10.0
+
+network:
+  hidden_sizes: [128, 128]
+  activation: "tanh"
+  log_std_init: 0.0
+  use_orthogonal_init: true
+
+logging:
+  log_dir: "results/logs/ablation_carbon_focus"
+  checkpoint_dir: "results/checkpoints/ablation_carbon_focus"
+  plot_dir: "results/plots"
+  log_interval: 100
+  use_tensorboard: true
+  tensorboard_dir: "results/tensorboard/ablation_carbon_focus"

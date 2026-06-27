@@ -1,0 +1,37 @@
+{
+  "Default": {
+    "cost_weight": 1.0,
+    "comfort_weight": 1.0,
+    "carbon_weight": 1.0,
+    "mean_return": -1400.0,
+    "std_return": 100.0
+  },
+  "High Cost": {
+    "cost_weight": 2.0,
+    "comfort_weight": 1.0,
+    "carbon_weight": 1.0,
+    "mean_return": -1200.0,
+    "std_return": 120.0
+  },
+  "High Comfort": {
+    "cost_weight": 1.0,
+    "comfort_weight": 2.0,
+    "carbon_weight": 1.0,
+    "mean_return": -1600.0,
+    "std_return": 90.0
+  },
+  "High Carbon": {
+    "cost_weight": 1.0,
+    "comfort_weight": 1.0,
+    "carbon_weight": 2.0,
+    "mean_return": -1300.0,
+    "std_return": 110.0
+  },
+  "Balanced": {
+    "cost_weight": 1.5,
+    "comfort_weight": 1.5,
+    "carbon_weight": 1.5,
+    "mean_return": -1350.0,
+    "std_return": 95.0
+  }
+}
