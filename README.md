@@ -6,6 +6,13 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
+
+## Architecture Diagram
+
+<p align="center"> <img src="./architecture.png" width="100%" alt="Syed Bilal Hassan Banner"> </p>
+
+<h1 align="center">Proposed Architecture</h1>
+
 ---
 
 ## Overview
@@ -185,11 +192,7 @@ Key results include:
 
 ---
 
-## License
 
-MIT License
-
----
 
 ## Authors
 
