@@ -15,6 +15,10 @@
 
 ---
 
+## 📚 Documentation
+
+- **[Research Paper](PPO_for_Smart_Grid_Optimization.pdf)**
+
 ## Overview
 
 This project implements a reinforcement learning system for smart grid energy management using Proximal Policy Optimization (PPO). The system optimizes multiple objectives simultaneously: electricity cost, carbon emissions, peak demand reduction, and battery health preservation.
